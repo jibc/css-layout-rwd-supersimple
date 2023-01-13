@@ -1,0 +1,1 @@
+Just projects to become good at pure css
