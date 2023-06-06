@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CamelBook</title>
+  <style>
+    body {
+      font-family: Arial;
+      font-size: 18px;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .container {
+      display: grid;
+      grid-template-columns: 200px 200px 200px;
+      column-gap: 20px;
+      margin-left: 15px;
+    }
+    .page {
+      box-shadow: 0 0 4px grey;
+    }
+
+ 
+    .profile-picture {
+      height: 200px;
+      width: 200px;
+      object-fit: cover;
+    }
+    .profile-info {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      column-gap: 10px;
+      align-items: center;
+      margin-left: 10px;
+    }
+    .pic-user {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .add-btn {
+      background-color: rgb(41, 118, 211);
+      color: white;
+      height: 36px;
+      width: 80px;
+      border-radius: 4px;
+      cursor: pointer;
+      border-style: solid;
+      border-color: rgb(41, 118, 211);;
+      border-width: 1px;
+      margin-right: 20px;
+      margin-left: 10px;
+      margin-bottom: 10px;    
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="page page1">
+      <img class="profile-picture" src="camel1.jpg" alt="">
+      <div class="profile-info">
+        <img class="pic-user" src="person1.jpg" alt="">
+        <p>Sylvie</p>
+      </div>   
+
+      <button class="add-btn">Add friend</button>
+    </div>
+
+    <div class="page">
+      <img class="profile-picture" src="camel2.jpg" alt="">
+      <div class="profile-info">
+        <img class="pic-user" src="person2.jpg" alt="">
+        <p>Josiane</p>
+      </div>
+      <button class="add-btn">Add friend</button>
+    </div>
+
+    <div class="page">
+      <img class="profile-picture" src="camel3.jpg" alt="">
+        <div class="profile-info">
+        <img class="pic-user" src="person3.jpg " alt="">
+      <p>Michelle</p>
+      </div>
+      <button class="add-btn">Add friend</button>
+    </div>
+  </div>
+</body>
+</html>
