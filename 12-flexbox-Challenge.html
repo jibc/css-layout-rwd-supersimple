@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Challenge</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: 18px;
+      font-family: Helvetica;
+    }
+
+    .container {
+      margin-top: 25px;
+      margin-left: 50px;
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      border: 1px solid rgba(128, 128, 128, 0.3);
+
+      border-radius: 6px;
+      row-gap: 5px;
+      padding: 5px 10px 5px 10px;
+      
+    }
+    .bar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .bar div {
+      background-color: rgb(65,105,225);
+      color: white;
+      border-radius: 8px;
+      border: none;
+      height: 24px;
+      width: 48px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 24px;
+    }
+    .container2 {
+      display: flex;
+      flex-direction: column;
+      width: 360px;
+      justify-content: center;
+      margin-left: 50px;
+      margin-top: 25px;
+      gap: 10px;
+      
+    }
+    .container2 p,
+    .container2 button {
+      font-size: 12px;
+    }
+    .display-profil {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+    }
+    
+    .display-profil div {
+      display: flex;
+      flex-direction: column;
+    }
+    .display-profil img {
+      height: 50px;
+      width: 50px;
+    
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .display-profil button {
+      background-color: rgb(29,161,242);
+      color: white;
+      margin-left: auto;
+      border: none;
+      height: 36px;
+      width: 72px;
+      border-radius: 0.2rem;
+    }
+    .profil-description {
+      padding-left: 10px;
+    }
+    .profil-description p {
+      padding-bottom: 8px;
+    }
+    .profil-description p:first-of-type {
+      font-weight: 700;
+    }
+    .profil-description p:nth-last-child(-n+2) {
+      color: grey;
+    }
+    .container3 {
+      display: flex;
+      flex-direction: row;
+      width: 600px;
+      height: 50px;
+      border-radius: 0.1rem;
+      justify-content: space-between;;
+      align-items: center;
+      background-color: #6610f2;
+      color: white;
+      margin-top: 25px;
+      margin-left: 50px;
+    }
+    .container3 button {
+      background-color: #6610f2;
+      color: white;
+      border: 1px solid white;
+      margin-right: 10px;
+      height: 36px;
+      width: 100px;
+    }
+    .container3 p {
+      margin-left: 10px;
+    }
+    .search {
+      border: none;
+      border-radius: 1rem;
+      height: 36px;
+      flex: 1;
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+    .search::placeholder {
+      padding-left: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <p>Exercice 12e.</p>
+  <div class="container">
+    <div class="bar">
+      <p>Home</p>
+      <div class="notification">14</div>
+    </div>
+    <div class="bar">
+      <p>Notifications</p>
+      <div class="notification">3</div>
+    </div>
+    <div class="bar">
+      <p>Messages</p>
+      <div class="notification">5</div>
+    </div>
+  </div>
+  <p>Exercice 12g.</p>
+  <div class="container2">
+    <div class="display-profil">
+      <div class="pic">
+        <img src="/coolcat-unsplash.jpg" alt="cat with cool glasses">
+      </div>
+      <div class="profil-description">
+        <p>oliver</p>
+        <p>the cat</p>
+        <p>Popular</p>
+      </div>   
+      <button>Follow</button>
+    </div>
+    <div class="display-profil">  
+      <div class="pic">
+        <img src="/happycat-unsplash.jpg" alt="cat looking happy">
+      </div>
+      <div class="profil-description">
+        <p>Mimi</p>
+        <p>Hzppy cat</p>
+        <p>Popular</p>
+      </div>
+      <button>Follow</button>
+    </div>
+    <div class="display-profil">
+      <div class="pic">
+      <img src="/watchingcat-unsplash.jpg" alt="cat looking something">
+      </div>
+      <div class="profil-description">
+        <p>Fyodor</p>
+        <p>Looking Cat</p>
+        <p>Popular</p>
+      </div>
+      <button>Follow</button>
+    </div>
+  </div>
+  <p>Exercice 12h.</p>
+  <div class="container3">
+    <p>Home</p>
+    <input class="search" type="search" placeholder="Search">
+    <button>Download</button>
+  </div>
+</body>
+</html>
